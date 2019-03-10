@@ -2,7 +2,7 @@ import { richBlack } from './variablesStyle'
 
 const landingStyle = {
 
-  backgroundColor: richBlack,
+  backgroundColor: 'rgba(0,0,0,0.3)',
   minHeight: "100vh",
   display: "flex",
   flexDirection: "column",
@@ -17,7 +17,13 @@ const logoStyle = {
   padding: '10vmin'
 }
 
+const inputGroupStyle = {
+  textAlign: 'center',
+  width: '30%'
+}
+
 export {
   landingStyle,
-  logoStyle
+  logoStyle,
+  inputGroupStyle
 }

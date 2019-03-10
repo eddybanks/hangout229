@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: url('https://wallpapercave.com/wp/wp1809910.png');
+  background-size: cover;
 }
 
 .App-logo {

@@ -1,14 +1,19 @@
 import React from 'react'
-import {landingStyle, logoStyle} from '../../stylesheets/modules/landingStyle'
+import {landingStyle, logoStyle, inputGroupStyle} from '../../stylesheets/modules/landingStyle'
 import logo from '../../images/logoPurple.png'
+import { InputGroup, Input, InputGroupAddon, Button } from 'reactstrap'
 
-const landing = () => {
+const landing = (props) => {
   return (
     <div style={landingStyle}>
       <header>
         <img src={logo} alt="Hangout229" style={logoStyle} />
       </header>
-      <input type="text" />
+      <InputGroup style={inputGroupStyle}>
+        <Input type="text" onChange={props.onChange} placeholder="Your Phone Number Goes Here!" />
+        <InputGroupAddon addonType="append"><Button onClick={props.onClick}>Login</Button></InputGroupAddon>
+      </InputGroup>
+      
     </div>
   )
 }
