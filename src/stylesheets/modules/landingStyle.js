@@ -1,8 +1,7 @@
 import { richBlack } from './variablesStyle'
 
 const landingStyle = {
-
-  backgroundColor: 'rgba(0,0,0,0.3)',
+  backgroundColor: "rgba(0,0,0,0.9)",
   minHeight: "100vh",
   display: "flex",
   flexDirection: "column",

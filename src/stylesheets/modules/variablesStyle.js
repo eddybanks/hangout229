@@ -12,10 +12,22 @@ const [
   "rgba(78, 205, 196, 1)"
 ]
 
+const [
+  purpleLogo,
+  greenLogo,
+  amberLogo
+] = [
+  'https://adobe.ly/2F2IpU5',
+  'https://adobe.ly/2UoVSKZ',
+  'https://adobe.ly/2NSplup'
+]
 export {
   richBlack,
   arsenic,
   tyrianPurple,
   mistyRose,
-  mediumTurquoise
+  mediumTurquoise,
+  purpleLogo,
+  greenLogo,
+  amberLogo
 }
