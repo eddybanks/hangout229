@@ -1,7 +1,8 @@
 import React from 'react'
 import {landingStyle, logoStyle, inputGroupStyle} from '../../stylesheets/modules/landingStyle'
-import logo from '../../images/amberLogo.png'
+import logo from '../../images/logoPurple.png'
 import { InputGroup, Input, InputGroupAddon, Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 const landing = (props) => {
   return (
@@ -10,10 +11,14 @@ const landing = (props) => {
         <img src={logo} alt="Hangout229" style={logoStyle} />
       </header>
       <InputGroup style={inputGroupStyle}>
-        <Input type="text" onChange={props.onChange} placeholder="Your Phone Number Goes Here!" />
-        <InputGroupAddon addonType="append"><Button color="danger" onClick={props.onClick}>Login</Button></InputGroupAddon>
+        <Input type="text" placeholder="Your Phone Number Goes Here!" />
+        <InputGroupAddon addonType="append">
+          <Button color="danger">
+            <Link to="/welcome">Login</Link>
+          </Button>
+        </InputGroupAddon>
       </InputGroup>
-      
+      <p>{props.message}</p>
     </div>
   )
 }
