@@ -16,7 +16,7 @@ class WelcomeContainer extends Component {
   render() {
     return (
       <div>
-        <Welcome user="Carl" logo={logo} style={logoStyle} />
+        <Welcome user="Carl" logo={logo} />
       </div>
     )
   }

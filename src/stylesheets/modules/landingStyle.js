@@ -11,18 +11,12 @@ const landingStyle = {
   color: "rgba(255,255,255,1)"
 }
 
-const logoStyle = {
-  width: '40%',
-  padding: '10vmin'
-}
-
 const inputGroupStyle = {
   textAlign: 'center',
-  width: '30%'
+  width: '20%'
 }
 
 export {
   landingStyle,
-  logoStyle,
   inputGroupStyle
 }

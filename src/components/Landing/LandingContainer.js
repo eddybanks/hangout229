@@ -17,13 +17,35 @@ class LandingContainer extends Component {
           phoneNumber: "50523234123",
           nickname: "aycarl"
         }
-      ]
+      ],
+      x: 0,
+      y: 0,
+      customStyle: {}
     }
+
+    this.handleMouseOver = this.handleMouseOver.bind(this)
+  }
+
+  handleMouseEnter = e => {
+  }
+
+  handleMouseOver = e => {
+    this.setState({
+      x: e.nativeEvent.offsetX,
+      y: e.nativeEvent.offsetY,
+    })
+  }
+
+  handleMouseLeave= e => {
+  }
+
+  handleMouseLeave = e => {
+
   }
 
   render() {
     return (
-      <Landing />
+      <Landing onMouseOver={this.handleMouseOver} x={this.state.x} y={this.state.y} customStyle={this.state.customStyle} />
     )
   }
 }
