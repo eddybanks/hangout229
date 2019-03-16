@@ -20,7 +20,6 @@ const landing = (props) => {
             </Button>
           </InputGroupAddon>
         </InputGroup>
-        <p>{props.x} - {props.y}</p>
       </div>
     </div>
   )
