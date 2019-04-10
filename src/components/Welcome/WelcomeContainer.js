@@ -8,15 +8,15 @@ class WelcomeContainer extends Component {
     super(props)
 
     this.state = {
-      datetime: "SAT - 3/9/19 - 4PM",
-      rsvp: false
+      event: { name: 'Game Night', datetime: "SAT - 3/9/19 - 4PM" },
+      user: { name: 'Carl', rsvp: false }
     }
   }
 
   render() {
     return (
       <div>
-        <Welcome user="Carl" logo={logo} />
+        <Welcome user={this.state.user} event={this.state.event} logo={logo} />
       </div>
     )
   }

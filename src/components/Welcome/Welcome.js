@@ -1,16 +1,26 @@
 import React from 'react'
-import { logoStyle } from '../../stylesheets/modules/landingStyle'
-import { Row, Col } from 'reactstrap'
+import styles from '../../stylesheets/modules/Welcome.module.css'
+import { Row, Col, Button } from 'reactstrap'
 
 const Welcome = (props) => {
   return (
-    <div>
+    <div className={styles.WelcomePage}>
       <Row>
-        <h3>Welcome, {props.user}!</h3>
-        {/* <img src={props.logo} alt="images" style={{width: '20vh', height: '5vh', textAlign: 'right'}} /> */}
+        <Col>
+          <h3>Welcome, {props.user.name}!</h3>
+        </Col>
+        <Col>
+          <img src={props.logo} alt="images" className={styles.LogoNav} />
+        </Col>
       </Row>
       <Row>
-        <h2>HEHE</h2>
+        <Col>
+          <h1>{props.event.name}</h1>
+          <p>{props.event.datetime}</p>
+          <h3>Are you coming?</h3>
+          <Button>Yes</Button>
+          <Button>No</Button>
+        </Col>
       </Row>
     </div>
   )
