@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import logo from '../../images/logoPurple.png'
-import Welcome from './Welcome'
+import HomePage from './HomePage'
+import NavigationBar from '../Layout/Navigation'
 import {landingStyle, logoStyle, inputGroupStyle} from '../../stylesheets/modules/landingStyle'
 
-class WelcomeContainer extends Component {
+class HomePageContainer extends Component {
   constructor(props) {
     super(props)
 
@@ -16,10 +16,11 @@ class WelcomeContainer extends Component {
   render() {
     return (
       <div>
-        <Welcome user={this.state.user} event={this.state.event} logo={logo} />
+        <NavigationBar user={this.state.user} />
+        <HomePage event={this.state.event} />
       </div>
     )
   }
 }
 
-export default WelcomeContainer
+export default HomePageContainer
