@@ -1,6 +1,6 @@
 import React from 'react'
 import { inputGroupStyle} from '../../stylesheets/modules/landingStyle'
-import logo from '../../images/logoPurple.png'
+import logo from '../../assets/logoPurple.png'
 import { InputGroup, Input, InputGroupAddon, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import styles from '../../stylesheets/modules/Landing.module.css'
