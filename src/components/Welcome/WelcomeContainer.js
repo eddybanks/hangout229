@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../../images/logoPurple.png'
+import logo from '../../assets/logoPurple.png'
 import Welcome from './Welcome'
 import {landingStyle, logoStyle, inputGroupStyle} from '../../stylesheets/modules/landingStyle'
 

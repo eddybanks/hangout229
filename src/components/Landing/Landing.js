@@ -16,7 +16,7 @@ const landing = (props) => {
           <Input type="text" placeholder="Your Phone Number Goes Here!" />
           <InputGroupAddon addonType="append">
             <Button color="danger">
-              <Link to="/welcome">Login</Link>
+              <Link to="#">Login</Link>
             </Button>
           </InputGroupAddon>
         </InputGroup>
